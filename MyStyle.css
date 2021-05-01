@@ -1,0 +1,265 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Codystar';
+    background: black;
+    background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+ }
+ 
+ .neons {
+    margin-top: 10rem;
+    text-align: center;
+ }
+ 
+ .neons h1 {
+   font-size: 9rem;
+   text-align: center;
+    font-weight: bold;
+   -webkit-animation: glow 2s ease-in-out infinite alternate;
+   -moz-animation: glow 2s ease-in-out infinite alternate;
+   animation: glow 2s ease-in-out infinite alternate;
+ }
+ 
+.Heading{
+    text-align: center;
+    font-family: Arial;
+    font-style: oblique;
+    font-size: 35px;
+    font-variant: small-caps;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-shadow: 2px 2px 5px red;
+    color: seagreen;
+    padding: 10px;
+}
+.first{
+    text-transform: lowercase;
+    line-height: 1; 
+    padding: 10px;
+    border-style: groove;
+    border-radius: 25px;
+    color:thistle;
+   } 
+   
+.first::first-letter {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: sans-serif; 
+    letter-spacing: 5px; 
+   }
+
+.first:hover,.second:hover,.third:hover,.fourth:hover {
+    border-color: red;
+}
+
+.second{
+    padding: 10px;
+    border-style: groove;
+    border-radius: 25px;
+    font-size: large;
+    color:white;
+    text-shadow: 4px 3px 0px #ff0000, 9px 8px 0px rgba(5, 207, 66, 0.829);
+} 
+
+#Image1:hover{
+    transform: scale(1.2,1.2);
+}
+
+#Image2:hover{
+    transform:  rotate(120deg);
+}
+
+#Image3:hover{
+    transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+}
+
+#Image4:hover{
+    transform: scaleX(0.5);
+}
+
+#Image5:hover{
+    transform: rotate3d(10,10,2,45deg);
+}
+
+#Image6:hover{
+    transform: scaleY(0.5);
+}
+
+#Image7:hover{
+    transform: skew(20deg, 10deg);
+}
+
+.third{
+    text-align: center;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 25px;
+    color:white;
+    height: 50vh;
+   } 
+
+.third:hover{
+    color:red;
+}
+
+.fourth{
+    text-align: center;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 25px;
+    color:white;
+   } 
+
+   .neons {
+    margin-top: 1rem;
+    text-align: center;
+ }
+ 
+ .neons h1 {
+   font-size: 3rem;
+   text-align: center;
+   font-weight: bold;
+   animation: glow 2s ease-in-out infinite alternate;
+ }
+ 
+ @keyframes glow {
+      from {
+       color: #fff;
+     text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+   }
+   
+   to {
+      color: gray;
+     text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+   }
+ }
+
+ .mydiv {
+    width: 100px;
+    height: 100px;
+    transform: translateX(680px);
+    background-color: red;
+    border-radius: 50%;
+  }
+
+  .mydiv:hover{
+    position: relative;
+    animation-name: example;
+    animation-duration: 6s;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:20px; top:0px;}
+    50%  {background-color:blue; left:20px; top:20px;}
+    75%  {background-color:green; left:0px; top:20px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+.fifth{
+    text-align: center;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 25px;
+    color:white;
+   } 
+
+.insideFifth{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+  }
+  
+.insideFifth:hover {
+    width: 1500px;
+  }
+
+  .sixth{
+    text-align: center;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 25px;
+    color:white;
+   } 
+
+   .sixth:hover{
+       opacity: 50%;
+   }
+
+   #img:hover{
+       transform: scale(1.1,1.1)
+   }
+
+   .seventh{
+    text-align: center;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 25px;
+    color:white;
+   } 
+
+   .eigth{
+    text-align: center;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 25px;
+    color:white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+   } 
+
+   .nineth{
+    text-align: center;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 25px;
+    color:white;
+   } 
+
+   #grad{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    transition: width 10s;
+  }
+  
+  #grad:hover{
+    width: 1500px;
+  }
+
+  #text::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+  }
+  
+  #text::first-line {
+    color: #0000ff;
+    font-variant: small-caps;
+  }
+
+  a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
